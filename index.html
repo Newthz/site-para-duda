@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para o Amor da Minha Vida ❤️</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #b30059;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 300px;
+    }
+    button {
+      background: #b30059;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #ff4da6;
+    }
+    #result {
+      display: none;
+      margin-top: 30px;
+    }
+    #result img {
+      width: 250px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    /* Responsivo para celular */
+    @media (max-width: 600px) {
+      body {
+        padding: 5px;
+      }
+      h1 {
+        font-size: 1.3em;
+      }
+      .question {
+        font-size: 1em;
+        margin: 12px 0;
+      }
+      input[type="text"] {
+        width: 95%;
+        font-size: 1em;
+        max-width: 98vw;
+      }
+      #result img {
+        width: 90vw;
+        max-width: 300px;
+      }
+      p, h2 {
+        font-size: 1em;
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Um leve questionario 🧐</h1>
+  <div id="quiz">
+    <div class="question">1. Onde a gente se conheceu?</div>
+    <input type="text"><br><br>
+    <div class="question">2. Onde foi nosso primeiro encontro?</div>
+    <input type="text"><br><br>
+    <div class="question">3. Como foi o pedido de namoro?</div>
+    <input type="text"><br><br>
+    <div class="question">4. Onde a gente ficou pela primeira vez?</div>
+    <input type="text"><br><br>
+    <div class="question">5. Quanto foi que vc percebeu que gostava de mim?</div>
+    <input type="text"><br><br>
+    <button onclick="mostrarResultado()">Enviar 💌</button>
+  </div>
+
+  <div id="result">
+    <h2>Te amo demais, meu amor! 💖</h2>
+  <p style="font-size: 0.85em; max-width: 350px; margin: 0 auto;">Você é a melhor parte da minha vida. Sou muito grato por poder passar cada segundo ao seu lado, você tornou meu 2024 e 2025 perfeitos, ainda vamos construir muita coisa juntos, muitas historias ainda vao vir pela frente, EU TE AMO MUITO AMOR</p>
+    <img src="foto.jpg" alt="Nossa foto">
+    <div>
+
+     <audio id="musica" controls>
+  <source src="Matheus & Kauan - Me Amar Amanhã - Na Praia Ao Vivo [qbBUBhefMYQ].mp3" type="audio/mpeg">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('musica');
+      if (audio) {
+        audio.volume = 0.1;
+      }
+    });
+  </script>
+    </audio>
+    <script>
+  function mostrarResultado() {
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("result").style.display = "block";
+
+    var musica = document.getElementById("musica");
+    musica.volume = 0.2;
+    musica.play().catch(function(error){
+      console.log("O navegador bloqueou o autoplay.");
+    });
+  }
+</script>
+
+<p style="font-size: 0.85em; white-space: nowrap;">foi a primeira musica que apareceu na minha cabeça, e por algum motivo eu acho que ela combina com a gente.</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarResultado() {
+      document.getElementById("quiz").style.display = "none";
+      document.getElementById("result").style.display = "block";
+    }
+  </script>
+</body>
+</html>
